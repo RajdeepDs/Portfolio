@@ -1,0 +1,36 @@
+---
+import SkillBox from "./ui/skill-box.astro";
+---
+
+<div class="flex-col bg-purple/25  justify-center mx-auto mt-32 p-10 w-3/4">
+  <div class="relative flex text-center justify-center">
+    <h1 class="font-medium text-3xl">Skills</h1>
+    <svg
+      class="absolute top-7"
+      xmlns="http://www.w3.org/2000/svg"
+      width="87"
+      height="11"
+      viewBox="0 0 87 11"
+      fill="none"
+    >
+      <path
+        d="M1 7.6167C3.38726 5.98308 53.9949 -5.28236 86 9.61668"
+        stroke="#EBC1FF"
+        stroke-width="3"></path>
+    </svg>
+  </div>
+  <div class="flex gap-12 z-40 justify-center mt-4">
+    <SkillBox
+      title="Full Stack Development"
+      desc="I am adept at Full Stack Web Development, possessing the expertise to conceptualize, design, and execute comprehensive web projects from frontend to backend seamlessly."
+    />
+    <SkillBox
+      title="DevOps"
+      desc="I am currently delving into the world of DevOps, gaining hands-on experience and understanding of its methodologies and tools to streamline software development and deployment processes."
+    />
+    <SkillBox
+      title="AI / ML"
+      desc="I've recently decided to embark on a journey into AI/ML, eager to unlock the vast potential of these technologies and incorporate their transformative capabilities into my skill set."
+    />
+  </div>
+</div>
