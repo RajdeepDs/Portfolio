@@ -1,84 +1,56 @@
 ---
-import SkillBox from "./ui/skill-box.astro";
 ---
 
-<!-- <div class="relative bg-purple/25 md:w-2/4 md:h-[453px] mb-10">
-  <div class="flex justify-center">
-    <h1>Skills</h1>
+<div class="bg-purple/25 w-full mb-10 lg:relative lg:w-2/4 lg:h-[453px] ">
+  <div class="relative flex justify-center pt-5">
+    <h1 class="font-medium text-3xl">Skills</h1>
+    <svg
+      class="absolute top-12"
+      xmlns="http://www.w3.org/2000/svg"
+      width="87"
+      height="11"
+      viewBox="0 0 87 11"
+      fill="none"
+    >
+      <path
+        d="M1 7.6167C3.38726 5.98308 53.9949 -5.28236 86 9.61668"
+        stroke="#EBC1FF"
+        stroke-width="3"></path>
+    </svg>
   </div>
-  <div class="absolute w-full h-full grid grid-cols-3 justify-items-center content-center flex-nowrap">
-    <SkillBox
-      title="Full Stack Development"
-      desc="I am adept at Full Stack Web Development, possessing the expertise to conceptualize, design, and execute comprehensive web projects from frontend to backend seamlessly."
-    />
-    <SkillBox
-      title="UI/UX Design"
-      desc="I am a UI/UX Designer, with a keen eye for detail and a passion for creating beautiful and intuitive user interfaces."
-    />
-    <SkillBox
-      title="AI/ML"
-      desc="I've recently decided to embark on a journey into AI/ML, eager to unlock the vast potential of these technologies and incorporate their transformative capabilities into my skill set."
-    />
+  <div
+    class="w-full grid grid-row-3 justify-center mt-12 gap-4 mb-5 lg:absolute lg:flex lg:top-1/2 lg:mt-0 lg:transform lg:-translate-y-1/2"
+  >
+    <div
+      class="bg-white w-72 px-4 py-8 space-y-1 rounded-md lg:absolute lg:left-0 lg:translate-x-[-50%]"
+    >
+      <h1 class="font-medium text-2xl">Full Stack Development</h1>
+      <p>
+        I am adept at Full Stack Web Development, possessing the expertise to
+        conceptualize, design, and execute comprehensive web projects from
+        frontend to backend seamlessly.
+      </p>
+    </div>
+    <div class="bg-white w-72 px-4 py-8 space-y-1 rounded-md">
+      <h1 class="font-medium text-2xl">DevOps</h1>
+      <p>
+        I am currently delving into the world of DevOps, gaining hands-on experience and understanding of its methodologies and tools to streamline software development and deployment processes.
+      </p>
+    </div>
+    <div
+      class="bg-white w-72 px-4 py-8 space-y-1 rounded-md lg:absolute lg:right-0 lg:translate-x-[50%]"
+    >
+      <h1 class="font-medium text-2xl">AI/ML</h1>
+      <p>
+        I've recently decided to embark on a journey into AI/ML, eager to unlock
+        the vast potential of these technologies and incorporate their
+        transformative capabilities into my skill set.
+      </p>
+    </div>
   </div>
-</div> -->
-
-<!-- <div
-  class="bg-purple/25 md:w-2/4 md:h-[453px] grid grid-cols-3 gap-4 content-center justify-center mb-10 "
->
-  <SkillBox
-    title="Full Stack Development"
-    desc="I am adept at Full Stack Web Development, possessing the expertise to conceptualize, design, and execute comprehensive web projects from frontend to backend seamlessly."
-  />
-  <SkillBox
-    title="UI/UX Design"
-    desc="I am a UI/UX Designer, with a keen eye for detail and a passion for creating beautiful and intuitive user interfaces."
-  />
-  <SkillBox
-    title="AI/ML"
-    desc="I've recently decided to embark on a journey into AI/ML, eager to unlock the vast potential of these technologies and incorporate their transformative capabilities into my skill set."
-  />
-</div> -->
-
-
-
-
-<!-- <div class="relative bg-purple/25 mb-10">
-  <div class="flex justify-center">
-    <h1 class="text-center">Skills</h1>
-  </div>
-  <div class="w-full h-full grid grid-cols-1 border-radius-lg">
-    <SkillBox
-      title="Full Stack Development"
-      desc="I am adept at Full Stack Web Development, possessing the expertise to conceptualize, design, and execute comprehensive web projects from frontend to backend seamlessly."
-    />
-    <SkillBox
-      title="UI/UX Design"
-      desc="I am a UI/UX Designer, with a keen eye for detail and a passion for creating beautiful and intuitive user interfaces."
-    />
-    <SkillBox
-      title="AI/ML"
-      desc="I've recently decided to embark on a journey into AI/ML, eager to unlock the vast potential of these technologies and incorporate their transformative capabilities into my skill set."
-    />
-  </div>
-</div> -->
-
-
-<div class="relative bg-purple/25 md:w-2/4 md:h-[453px] mb-10">
-  <div class="flex justify-center pt-5">
-      <h1>Skills</h1>
-  </div>
-  <div class="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-center">
-      <div class="bg-white w-72 px-4 py-8 gap-1 rounded-md absolute left-0 translate-x-[-50%]">
-          <h1 class="font-medium text-2xl">Full Stack Development</h1>
-          <p>I am adept at Full Stack Web Development, possessing the expertise to conceptualize, design, and execute comprehensive web projects from frontend to backend seamlessly.</p>
-      </div>
-      <div class="bg-white w-72 h-[191px] px-4 py-8 gap-1 rounded-md">
-          <h1 class="font-medium text-2xl">DevOps</h1>
-          <p>I am a UI/UX Designer, with a keen eye for detail and a passion for creating beautiful and intuitive user interfaces.</p>
-      </div>
-      <div class="bg-white w-72 px-4 py-8 gap-1 rounded-md absolute right-0 translate-x-[50%]">
-          <h1 class="font-medium text-2xl">AI/ML</h1>
-          <p>I've recently decided to embark on a journey into AI/ML, eager to unlock the vast potential of these technologies and incorporate their transformative capabilities into my skill set.</p>
-      </div>
+  <div class="hidden lg:block overflow-hidden absolute bg-transparent -z-40 w-full h-full transform -translate-y-14">
+    <div class="absolute -right-24 -top-20 bg-transparent border-2 border-purple/50 w-80 h-80 rounded-full" />
+    <div class="absolute -left-24 -bottom-20 bg-transparent border-2 border-purple/50 w-80 h-80 rounded-full" />
   </div>
 </div>
+
