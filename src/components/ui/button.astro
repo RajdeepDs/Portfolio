@@ -2,6 +2,8 @@
 const { title } = Astro.props;
 ---
 
-<div class="bg-black px-7 py-3 rounded-3xl cursor-pointer">
-  <p class="uppercase text-white">{title}</p>
+<div
+  class="bg-black px-7 py-3 rounded-3xl cursor-pointer hover:bg-black/50 text-white transition-all ease-linear"
+>
+  <p class="uppercase">{title}</p>
 </div>
